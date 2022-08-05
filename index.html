@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar">
+        <h1 class="logo">My Pets</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+           <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#pets">Pets</a></li>
+            <li><a href="#ajude">Doações</a></li>
+            <li class="ctn"><a href="#">Contato</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="menu mobile" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>My Pets is love</h2>
+            <div class="line"></div>
+            <h1>Meus amigos Pets</h1>
+            <a href="#" class="ctn">Saiba Mais</a>
+        </div>
+    </header>
+    <section class="events">
+        <div id="sobre">
+        <div class="title">
+        <h1>Lorem ipsum</h1>
+        <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <img src="img/Calopsita.webp" alt="Calopsita">
+            <h4>Calopsita</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio unde eaque ducimus quia rem, laborum repellendus recusandae! Odit veritatis, adipisci tempora totam optio molestias omnis modi hic ipsa cumque.</p>
+            <a href="#" class="ctn">Saiba Mais</a>
+        </div>
+        <div class="col">
+            <img src="img/Reptéis.webp" alt="Calopsita">
+            <h4>Gato</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio unde eaque ducimus quia rem, laborum repellendus recusandae! Odit veritatis, adipisci tempora totam optio molestias omnis modi hic ipsa cumque.</p>
+            <a href="#" class="ctn">Saiba Mais</a>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="pets">
+        <div id="pets">
+        <div class="pets-content">
+        <h1>Adote um Pet</h1>
+        <div class="line"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam velit commodi obcaecati, quia amet dolores molestias hic natus modi at saepe consectetur iure praesentium sapiente dolorem fugiat eos! Alias?</p>
+        <a href="#" class="ctn">Saiba Mais</a>
+         </div>
+         </div>
+    </section>
+    <section class="doacao">
+        <div class="row">
+            <div id="ajude"></div>
+            <div class="col content-col">
+                <h1>Ajude um pet a ser feliz</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum dolorem quis sit cum asperiores natus sint modi! Animi sed odit delectus quis veritatis tenetur, enim dignissimos? Id necessitatibus voluptatibus quos.</p>
+                <a href="#" class="ctn">Saiba Mais</a>
+            </div>
+            <div class="image-col">
+                <div class="image-gallery">
+                    <img src="img/Reptéis.webp" alt="animal doente 1">
+                    <img src="img/Reptéis.webp" alt="animal doente 2">
+                    <img src="img/Gato2.webp" alt="animal doente 3">
+                    <img src="img/Gato2.webp" alt="animal doente 4">
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    <section class="footer">
+        <p>2022 © My Pet. Desenvolvido por Davi Maroto</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+        navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
